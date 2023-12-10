@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Calculadora</h1>
+    
+    <%= form_tag('/calculadora/calcular', method: 'post') do %>
+      <div class="operacoes">
+        <%= text_field_tag 'operando1', params[:operando1], placeholder: 'Operando 1' %>
+        <%= text_field_tag 'operador', params[:operador], placeholder: 'Operador' %>
+        <%= text_field_tag 'operando2', params[:operando2], placeholder: 'Operando 2' %>
+        <%= submit_tag 'Calcular' %>
+      </div>
+    <% end %>
+    
+    <% if @resultado %>
+      <p>Resultado: <%= @resultado %></p>
+    <% end %>
+    </div>
+  
+</body>
+</html>
+
+
+
+
+
+

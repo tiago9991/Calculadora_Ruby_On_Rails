@@ -1,0 +1,75 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 78% 45%) 1%,
+    hsl(240deg 58% 59%) 56%,
+    hsl(240deg 56% 66%) 72%,
+    hsl(240deg 54% 73%) 82%,
+    hsl(240deg 52% 78%) 88%,
+    hsl(240deg 51% 83%) 92%,
+    hsl(240deg 49% 87%) 95%,
+    hsl(240deg 48% 92%) 97%,
+    hsl(240deg 46% 96%) 98%,
+    hsl(240deg 33% 99%) 100%
+  );
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+ }
+
+ .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .3);
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  padding: 50px;
+ }
+
+ .operacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+
+ input {
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+ }
+
+ input::placeholder {
+  text-align: center;
+  font-size: 14px;
+ }
+
+ input:hover {
+  background: #f2f2f2;
+ }
+
+ 
+
+ 
