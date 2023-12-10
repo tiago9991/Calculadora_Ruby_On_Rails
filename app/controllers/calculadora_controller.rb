@@ -9,7 +9,6 @@ class CalculadoraController < ApplicationController
     operando2 = params[:operando2].to_f
     operador = params[:operador].to_s.strip.downcase  # Remover espaços e converter para minúsculas
 
-    puts "Operador recebido: #{operador}"  # Saída de depuração
 
     case operador
     when '+'
